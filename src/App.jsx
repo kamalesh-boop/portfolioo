@@ -374,7 +374,7 @@ function App() {
 
       <section
         id="projects"
-        className="relative min-h-screen w-full bg-cover bg-center py-24"
+        className="relative min-h-[100svh] w-full bg-cover bg-center py-16 md:py-18 lg:py-16"
         style={{ backgroundImage: "url('/project-bg.jpeg')" }}
       >
         <motion.div
@@ -397,7 +397,7 @@ function App() {
             whileInView={prefersReducedMotion ? undefined : { opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.25 }}
             transition={{ duration: 0.9, ease: 'easeOut' }}
-            className="mx-auto max-w-[90rem] text-left font-['Fredoka',_'Poppins',_sans-serif] text-[2.5rem] font-semibold leading-tight text-white max-md:text-3xl [will-change:transform,opacity]"
+            className="mx-auto max-w-[90rem] text-left font-['Fredoka',_'Poppins',_sans-serif] text-[2.1rem] font-semibold leading-tight text-white max-md:text-[1.85rem] [will-change:transform,opacity]"
           >
             Projects
           </motion.h2>
@@ -406,7 +406,7 @@ function App() {
             whileInView={prefersReducedMotion ? undefined : { opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.25 }}
             transition={{ duration: 0.9, ease: 'easeOut', delay: 0.12 }}
-            className="mx-auto mt-2 max-w-[90rem] text-left font-['Inter',_sans-serif] text-[15px] text-white/80 [will-change:transform,opacity]"
+            className="mx-auto mt-1.5 max-w-[90rem] text-left font-['Inter',_sans-serif] text-[14px] text-white/80 [will-change:transform,opacity]"
           >
             A few things I&apos;ve built.
           </motion.p>

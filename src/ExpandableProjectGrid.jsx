@@ -43,7 +43,7 @@ const PROJECT_CARDS = [
     description: 'A fully offline voice-controlled AI agent that can search the web, control your system, and remember you.',
     icon: <IconRobot />,
     ctaText: 'View Details',
-    ctaLink: '#projects',
+    ctaLink: 'https://github.com/kamalesh-boop/jarvis',
     content: () => (
       <p>
         Built a local JARVIS-style AI assistant from scratch on a budget laptop (8GB RAM, no GPU). Uses Ollama + LLaMA
@@ -69,7 +69,7 @@ const PROJECT_CARDS = [
     description: 'An offline AI legal assistant using a hybrid RAG pipeline for grounded legal search and explanations.',
     icon: <IconScale />,
     ctaText: 'View Details',
-    ctaLink: '#projects',
+    ctaLink: 'https://github.com/kamalesh-boop/legal-assistant',
     content: () => (
       <p>
         Built an offline legal AI assistant using a production-style Retrieval-Augmented Generation (RAG) architecture.
@@ -97,7 +97,7 @@ const PROJECT_CARDS = [
     description: 'A full-stack AI productivity coach that manages tasks, habits, mood, and study sessions in one intelligent workspace.',
     icon: <IconSparkles />,
     ctaText: 'View Details',
-    ctaLink: '#projects',
+    ctaLink: 'https://github.com/kamalesh-boop/aifriend',
     content: () => (
       <p>
         Built and deployed a production-grade AI life coach web app using Next.js 14 and Supabase.
@@ -124,7 +124,7 @@ const PROJECT_CARDS = [
     description: 'An AI-powered Chrome extension that summarizes webpages and lets users ask questions on highlighted text.',
     icon: <IconBrowser />,
     ctaText: 'View Details',
-    ctaLink: '#projects',
+    ctaLink: 'https://github.com/kamalesh-boop/aria-extension',
     content: () => (
       <p>
         Built a production-grade Chrome extension using Plasmo and React that transforms webpages into interactive
@@ -151,7 +151,7 @@ const PROJECT_CARDS = [
     description: 'A cross-platform AI CLI tool that translates plain English into executable shell commands.',
     icon: <IconTerminal2 />,
     ctaText: 'View Details',
-    ctaLink: '#projects',
+    ctaLink: 'https://github.com/kamalesh-boop/terminalbuddy',
     content: () => (
       <p>
         Built an AI-powered terminal assistant in Python that converts natural language into executable shell commands.
@@ -176,7 +176,7 @@ const PROJECT_CARDS = [
     description: 'A WhatsApp bot that converts photos into clean scanner-style PDFs directly inside chat.',
     icon: <IconBrandWhatsapp />,
     ctaText: 'View Details',
-    ctaLink: '#projects',
+    ctaLink: 'https://github.com/kamalesh-boop/scanner',
     content: () => (
       <p>
         Built a WhatsApp bot that transforms photos into scanner-quality PDFs in seconds.
@@ -256,7 +256,7 @@ function ProjectFeatureCell({
       onClick={open}
       onKeyDown={onKeyDown}
       className={cn(
-        'group/feature relative flex cursor-pointer flex-col py-12 transition-all duration-300 [backface-visibility:hidden] [transform:translateZ(0)] [will-change:transform,opacity] outline-none focus-visible:ring-2 focus-visible:ring-[#FACC15]/80 border-white/15 hover:border-[#FFD166]/45 hover:shadow-[0_14px_35px_rgba(0,0,0,0.2)]',
+        'group/feature relative flex cursor-pointer flex-col py-9 transition-all duration-300 [backface-visibility:hidden] [transform:translateZ(0)] [will-change:transform,opacity] outline-none focus-visible:ring-2 focus-visible:ring-[#FACC15]/80 border-white/15 hover:border-[#FFD166]/45 hover:shadow-[0_14px_35px_rgba(0,0,0,0.2)]',
         isExpanded && 'pointer-events-none',
         isFirstColumn && 'border-l',
         isLastColumn && 'border-r',
@@ -270,13 +270,13 @@ function ProjectFeatureCell({
         <div className="pointer-events-none absolute inset-0 h-full w-full bg-gradient-to-b from-white/12 to-transparent opacity-0 transition duration-200 group-hover/feature:opacity-100" />
       )}
 
-      <div className="relative z-10 mb-4 px-12">
-        <div className="inline-flex rounded-xl border border-white/10 bg-white/5 p-2.5 text-white/90 backdrop-blur-[10px] [&_svg]:h-6 [&_svg]:w-6">
+      <div className="relative z-10 mb-3 px-10">
+        <div className="inline-flex rounded-xl border border-white/10 bg-white/5 p-2 text-white/90 backdrop-blur-[10px] [&_svg]:h-5 [&_svg]:w-5">
           {icon}
         </div>
       </div>
 
-      <div className="relative z-10 mb-2 px-12 text-xl font-bold text-[rgba(255,255,255,0.96)]">
+      <div className="relative z-10 mb-2 px-10 text-lg font-bold text-[rgba(255,255,255,0.96)]">
         <div className="absolute inset-y-0 left-0 h-6 w-1 origin-center rounded-br-full rounded-tr-full bg-white/30 transition-all duration-200 group-hover/feature:h-8 group-hover/feature:bg-[#FACC15]" />
         <motion.h3
           layoutId={`title-${title}-${layoutKey}`}
@@ -290,7 +290,7 @@ function ProjectFeatureCell({
       <motion.p
         layoutId={`description-${title}-${layoutKey}`}
         transition={LAYOUT_SPRING}
-        className="relative z-10 max-w-[280px] px-12 text-left text-[15px] leading-relaxed text-[rgba(255,255,255,0.72)]"
+        className="relative z-10 max-w-[260px] px-10 text-left text-[14px] leading-relaxed text-[rgba(255,255,255,0.72)]"
       >
         {description}
       </motion.p>
@@ -445,7 +445,7 @@ export function FeaturesSectionDemo() {
 
       <div
         className={cn(
-          'mx-auto grid max-w-[84rem] grid-cols-1 gap-x-6 gap-y-14 py-12 md:grid-cols-2 lg:grid-cols-3',
+          'mx-auto grid max-w-[78rem] grid-cols-1 gap-x-5 gap-y-10 py-8 md:grid-cols-2 lg:grid-cols-3',
           isInteractionLocked && 'pointer-events-none',
         )}
         aria-hidden={isModalOpen ? true : undefined}
